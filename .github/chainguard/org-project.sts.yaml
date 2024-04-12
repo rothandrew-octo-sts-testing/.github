@@ -5,6 +5,6 @@ claim_pattern:
   workflow_ref: rothandrew-octo-sts-testing/.*
 
 permissions:
-  contents: write
+  projects: write
 
 repositories: []
