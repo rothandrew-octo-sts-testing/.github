@@ -1,0 +1,6 @@
+issuer: https://token.actions.githubusercontent.com
+# Allow any repo in the "rothandrew-octo-sts-testing" org, but only workflows that use the "issues" event
+subject_pattern: repo:rothandrew-octo-sts-testing/.*:issues
+
+permissions:
+  projects: write
