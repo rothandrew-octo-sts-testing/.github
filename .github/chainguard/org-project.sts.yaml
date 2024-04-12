@@ -1,7 +1,7 @@
 # Purpose: Give repos in the org the ability to add issues to org projects
 
 issuer: https://token.actions.githubusercontent.com
-# Allow any repo in the org to have write access to org projects, if and only if the event trigger is "issues".
+# Allow any repo in the org to have write access to org projects.
 # TODO: Format the subject_pattern such that there is an allowlist of certain repos, rather than giving blanket permission to all repos
 subject_pattern: repo:rothandrew-octo-sts-testing/.*:ref:refs/heads/main
 permissions:
