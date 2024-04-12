@@ -1,8 +1,12 @@
 # Purpose: Give repos in the org the ability to add issues to org projects
 
 issuer: https://token.actions.githubusercontent.com
+
 # Allow any repo in the org to have write access to org projects.
+# It would be nice if I was able to use "repo:rothandrew-octo-sts-testing/.*:issues" as the subject pattern, in order to limit the runs to only ones that come from the "issues" event, but unfortunately it looks like the workflow always uses "repo:<org>/<repo>:ref:refs/heads/main" as the subject when issue events run.
+# (":issues" format derived from this doc: https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect#filtering-for-pull_request-events)
 # TODO: Format the subject_pattern such that there is an allowlist of certain repos, rather than giving blanket permission to all repos
 subject_pattern: repo:rothandrew-octo-sts-testing/.*:ref:refs/heads/main
+
 permissions:
   organization_projects: write
