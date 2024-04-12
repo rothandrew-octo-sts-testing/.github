@@ -4,3 +4,5 @@ subject_pattern: repo:rothandrew-octo-sts-testing/test-repo:.*
 
 permissions:
   contents: write
+
+repositories: []
