@@ -7,6 +7,5 @@ claim_pattern:
 permissions:
   administration: write
   organization_administration: write
-  projects: write
 
 repositories: []
