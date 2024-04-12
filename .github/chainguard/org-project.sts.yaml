@@ -3,5 +3,5 @@ subject_pattern: repo:rothandrew-octo-sts-testing/test-repo:.*
 claim_pattern:
   workflow_ref: rothandrew-octo-sts-testing/.*
 permissions:
-  projects: write
+  pull_requests: write
 repositories: []
